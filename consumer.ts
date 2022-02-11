@@ -1,10 +1,8 @@
 import {IPerson}from "./iperson"
-class Consumer extends IPerson{
-    existing:boolean
-    constructor(existing: boolean) {
-        super()
-        this.existing = existing
-        
-    }
+class Consumer implements IPerson {
+  isClubMember: boolean;
+  constructor(isClubMember: boolean) {
+    this.isClubMember = isClubMember;
+  }
 }
 export {Consumer}

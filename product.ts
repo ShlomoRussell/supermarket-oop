@@ -1,13 +1,13 @@
 class Product{
-    productName: string;
+    productName: string; 
     price: number;
-    comp: string;
-    desc: string;
+    brand: string;
+    barcode: string;
     constructor(price: number,productName: string,comp:string,desc:string) {
         this.price = price;
         this.productName = productName;
-        this.comp = comp;
-        this.desc = desc;
+        this.brand = comp;
+        this.barcode = desc;
     }
 }
 

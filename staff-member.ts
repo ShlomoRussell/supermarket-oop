@@ -1,8 +1,7 @@
 import{IPerson} from "./iperson"
-class StaffMember extends IPerson{
+class StaffMember implements IPerson{
     job: string;
     constructor(job: string) {
-        super()
         this.job=job
     }
 }
