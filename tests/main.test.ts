@@ -1,7 +1,7 @@
-import { CashRegister } from "../CashRegister";
+import { CashRegister } from "../Cash-Register";
 import { Consumer } from "../Consumer";
 import { Product } from "../Product";
-import { StaffMember } from "../StaffMember";
+import { StaffMember } from "../Staff-Member";
 
 const products: Product[] = [
     new Product(100, 'jagermeister', 'Mast-Jägermeister AG', 'asdr42fac3qfersfv43'),

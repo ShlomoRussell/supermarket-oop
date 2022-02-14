@@ -3,16 +3,24 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.CashRegister = void 0;
 class CashRegister {
     constructor(worker) {
+        this.product = [];
         this.cashId = CashRegister.cashIdCounter++;
         this.worker = worker;
-        this.product = [];
     }
-    startNewPurchase() { }
+    startNewPurchase() {
+        if (this.product.length == 0) {
+            return;
+        }
+        else
+            throw Error('ERROR!!! In the middle of another bill');
+    }
     endPurchase(a) {
         if (a.isClubMember === true) {
-            return this.product.forEach((a, b) => {
-                return a.price + a[b + 1].price;
-            });
+            let total = this.product.reduce((prev, curr) => {
+                return prev + curr.price;
+            }, 0);
+            this.product = [];
+            return total;
         }
     }
     addProduct(product) {
@@ -23,4 +31,4 @@ class CashRegister {
     }
 }
 exports.CashRegister = CashRegister;
-CashRegister.cashIdCounter = 0;
+CashRegister.cashIdCounter = 1;

@@ -16,13 +16,13 @@ const stands = [
     new cash_Register_1.CashRegister(cashiers[0]),
     new cash_Register_1.CashRegister(cashiers[1])
 ];
-stands[0].startNewPurchase(); // ERROR!!! No worker assigned
 stands[0].changeWorker(cashiers[1]);
 stands[1].changeWorker(cashiers[0]);
 stands[0].startNewPurchase();
 stands[0].addProduct(products[1]);
 stands[0].addProduct(products[1]);
 stands[0].addProduct(products[0]);
+stands[0].startNewPurchase(); // ERROR!!! In the middle of another bill
 const consumer = new consumer_1.Consumer(true);
 const bill = stands[0].endPurchase(consumer);
 console.log(bill); //114

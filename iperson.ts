@@ -1,2 +1,2 @@
-interface IPerson {}
-export { IPerson };
+export interface IPerson {}
+ 

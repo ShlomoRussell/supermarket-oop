@@ -1,4 +1,4 @@
-class Product{
+export class Product{
     productName: string; 
     price: number;
     brand: string;
@@ -11,4 +11,3 @@ class Product{
     }
 }
 
-export {Product}
