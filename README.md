@@ -1,4 +1,6 @@
 # supermarket-oop
+Write all your `.ts` files inside `src` directory.
+
 ## Tests
 run test with `npm run test` command
 
