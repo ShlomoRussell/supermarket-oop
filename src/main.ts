@@ -28,7 +28,7 @@ stands[0].addProduct(products[1]);
 stands[0].addProduct(products[1]);
 stands[0].addProduct(products[0]);
 
-stands[0].startNewPurchase(); // ERROR!!! In the middle of another bill
+//stands[0].startNewPurchase(); // ERROR!!! In the middle of another bill
 
 
 const consumer = new Consumer(true);
